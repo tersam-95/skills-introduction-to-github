@@ -14,6 +14,5 @@ jobs:
         run: echo "Compiling app"
       - name: Testing App
         run: echo "QA test"
-        run: echo "Security Tests"
       - name: Deployment
         run: echo "Deploying app"
