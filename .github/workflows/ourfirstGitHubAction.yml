@@ -1,0 +1,19 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Building App
+        run: echo "Compiling app"
+      - name: Testing App
+        run: echo "QA test"
+        run: echo "Security Tests"
+      - name: Deployment
+        run: echo "Deploying app"
